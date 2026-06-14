@@ -1,0 +1,121 @@
+\documentclass[12pt]{article}
+
+
+
+
+
+\usepackage{amsmath}  % For mathematical symbols and equations
+\usepackage{amssymb}  % For additional math symbols
+\usepackage{geometry} % To control page margins
+\geometry{a4paper, margin=1in}
+
+
+
+
+
+\usepackage{hyperref} % To include hyperlinks
+\usepackage{fancyhdr} % To customize the header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Programming Paradigms} 
+\fancyfoot[C]{\thepage}
+
+
+
+
+
+\title{Names,Bindings and Scope}
+\author{Saad Almalki}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction} 
+In an imperative language, a variable is an abstraction of a memory cell
+
+\section{Binding}
+Binding is associate entity with attribute.
+
+\subsection{Possible Binding Times}
+
+\begin{itemize}
+    \item \textbf{Language design time}
+    \item \textbf{Implementation time}
+    \item \textbf{Compile time} : Bindings a variable with a type
+    \item \textbf{Load time} : Bindings a static local variables
+    \item \textbf{Run time} : Bindings a nonstatic local variables
+\end{itemize}
+
+
+\section{Names} 
+
+\subsection{Length}
+If They too short , they cannot connotative.
+
+\subsubsection{Language examples}
+\begin{itemize}
+    \item FORTRAN I : Maximum 6
+    \item COBOL : Maximum 30
+    \item FORTRAN 90 and C 89 : Maximum 31
+    \item C 99 : Maximum 63
+    \item Java,C++,Csharp : No limits
+\end{itemize}
+
+
+\subsection{Case sensitivity}
+
+C-Based language is case sensitive but others are not.
+
+\section{Special words}
+
+\subsection{Keywords}
+word is used in Certain contexts
+
+\subsection{Reserved words}
+Words cannot be used as pre-defined words , FORTRAN have more than 300 reserved words !!!
+
+\subsection{Special characters}
+
+- PHP: all variable names must begin with Dollar signs
+
+– Perl: all variable names begin with special characters, which specify the variable’s type
+-@ are Ruby: variable names that begin with `@@` are instance variables
+
+examples : if , else , int
+
+\section{Attributes}
+
+Variables can be characterized as a sextuple of attributes:
+
+\begin{itemize}
+    \item \textbf{Name}
+    \item \textbf{Value}
+    \item \textbf{Address}
+    \item \textbf{Lifetime}
+    \item \textbf{Scope}
+    \item \textbf{Type}
+    \end{itemize}
+
+
+\section{Declaration}
+two kinds of declarations
+
+\begin{itemize}
+    \item \textbf{Explicit declaration} : int x = 5;
+    \item \textbf{Implicit declaration} : x = 5;
+\end{itemize}
+
+\subsection{Type binding}
+When? - three kinds of type bindings:
+
+1. Static type binding 2. Dynamic type binding 3. Type inference
+
+
+
+\begin{flushright}
+Created by: Saad Almalki \\
+\end{flushright}
+
+\end{document}
